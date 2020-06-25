@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="/style/style.css">
+
+    
+        <script src=""></script>
+
+
+        <title> Welcome To Ceed Gym</title>
+    </head>
+    <body id="home">
+        <!-- header start -->
+        <header class="main">
+            <div class="cover">
+                <!-- nav div -->
+                <div class="navbar" id="navbar">
+                    <!-- logo start -->
+                    <h1 class="logo">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>Ceed</span>GYM
+                    </h1>
+                    <!-- logo ends -->
+                    <div class="nav-right">
+                        <!-- navigation starts here  -->
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#equipment">Equipment</a></li>
+                                <li><a href="#contactus">Contact us</a></li>
+                            </ul>
+                        </nav>
+                        <!-- navigation ends -->
+                        <span class="callus">CALL: 08020000000</span>
+                    </div>
+
+                </div>
+                <!-- nav div ends -->
+                <div class="info">
+                    <h1> Get That Perfect Body</h1>
+                    <p>we are here for you</p>
+                </div>
+            </div>
+        </header> 
+        <!-- header ends -->
+
+        <!-- equipment start -->
+        <div>
+            <header id="equipment">
+                <h4>what we have to offer</h4>
+                <h2>EQUIPMENT</h2>
+                <P>Get the best gym equipment and services in the world</P>
+            </header>
+
+            <div class="images">
+                <div class="single-image">
+                    <img src="/equip/1.jpg" alt="sample image">
+                    <img src="/equip/2.jpg" alt="">
+                </div>
+                <div class="single-image">
+                    <img src="/equip/3.jpg" alt="sample image">
+                    <img src="/equip/4.jpg" alt="">
+                </div>
+                <div class="single-image">
+                    <img src="/equip/1.jpg" alt="sample image">
+                    <img src="/equip/2.jpg" alt="">
+                </div>
+                <div class="single-image">
+                    <img src="/equip/3.jpg" alt="sample image">
+                    <img src="/equip/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- equipment ends -->
+
+        <!-- contact us start -->
+        <section>
+            <div id="contactus">
+                <div class="contact contact-image">
+                    <img src="/contact.jpg" alt="contact us">
+                </div>
+                <div class="contact contact-form">
+                    <div class="message">
+                        <h1>Request Callback</h1>
+                    </div>
+                    <form action="">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="type" name="email" id="email">
+                        </div>
+                        <div class="form-control">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="text" name="phonenumber" id="phonenumber">
+                        </div>
+                        <div class="form-control">
+                            <a href="" class="btn">Send Info</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- contact us ends -->
+
+        <div class="footer">
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>Copyright &copy 2020 Ceed Media Services</p>
+        </div>
+        <!-- footer ends -->
+    </body>
+
+    <script>    
+        $("nav > ul > li > a").click(function(){
+            var elemId = $(this).attr('href');
+            $('html,body').animate({
+                scrollTop: $(elemId).offset().top
+            }, 2000);
+            });
+
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction(){
+            if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+            document.getElementById('navbar').style.
+            background = "rgba(134,125,125,0.6)";  
+            }else{
+                document.getElementById('navbar').style.background = "transparent";
+            }
+
+        }
+    </script>
+</html>
